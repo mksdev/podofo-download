@@ -25,11 +25,13 @@ cd "${PROJECT_ROOT}"
 
 if [ ! -d "${SVN_CLONE}" ];
 then
+  echo "git svn clone ${SVN_REPO} ${SVN_LAYOUT} ${SVN_CLONE}"
+
   git svn clone \
     "${SVN_REPO}" \
-#    -A "${AUTHORS_FILE}" \
     ${SVN_LAYOUT} \
     "${SVN_CLONE}"
+
   cd "${SVN_CLONE}"
 else
   cd "${SVN_CLONE}"
