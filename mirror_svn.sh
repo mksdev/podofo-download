@@ -42,7 +42,8 @@ else
 fi
 
 git remote add bare "${GIT_BARE}"
-git config remote.bare.push 'refs/remotes/*:refs/heads/*'
+git config remote.bare.push 'refs/remotes/origin/*:refs/heads/*'
+git svn show-ignore -i origin/trunk > .gitignore
 
 if [ -d "${GIT_BARE}" ];
 then
