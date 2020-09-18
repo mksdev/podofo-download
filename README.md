@@ -11,4 +11,4 @@ sudo apt-get install subversion
 sudo apt-get install git-svn
 ```
 
-To mirror the repository edit destination `GIT_REPO` in `config.sh`. Run `mirror.sh`. Mirror script can be used in cron job for automatic mirroring feature. Since this repository is not that acive It might be better to just run in manually once a month. 
+To mirror the repository edit destination `GIT_REPO` in `config.sh`. Run `mirror.sh`. Mirror script can be used in cron job for automatic mirroring feature. Since this repository is not that active it might be better to just run it manually once a month. 
